@@ -58,10 +58,15 @@
 
     $(document).ready(function(){
 
+// Remove optionalTags and navigationTags in theme deployment
+
         var headerText = $('.header-text'),
             headerHeight = $('.site-head').height(),
             mainContainer = $('.content'),
-            mainNav = $('.main-nav');
+            mainNav = $('.main-nav'),
+            optionalTags = $('.optional-tags'),
+            navigationTags = $('.navigation-tags');
+
 
 		function positionNav() {
           var conOffset = mainContainer.offset().top - $(window).scrollTop();
@@ -73,12 +78,17 @@
             mainNav
               .appendTo(document.body)
               .addClass('main-nav-fixed');
+            // Remove the tags.
+            optionalTags.remove();  
           } else {
             if (mainNav.hasClass('main-nav-fixed')) {
               mainNav.remove();
               mainNav
                 .appendTo('.header-container')
                 .removeClass('main-nav-fixed');
+            // Add the tags again
+              optionalTags.appendTo(navigationTags);
+
             }
           }
 		}

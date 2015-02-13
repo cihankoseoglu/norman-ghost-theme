@@ -7,14 +7,16 @@
         </div>
     </header>
     <nav class="main-nav">
-            <ul>
+            <ul class="navigation-tags">
                 <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
                 <li><a href="{{@blog.url}}/rss/"><i class="fa fa-rss"></i> Subscribe</a></li>
-                <li><a href="{{@blog.url}}/tag/entrepreneurship"><i class="fa fa-road"></i> Entrepreneurship</a></li>
-                <li><a href="{{@blog.url}}/tag/development"><i class="fa fa-code"></i> Development</a></li>
-                <li><a href="{{@blog.url}}/tag/music"><i class="fa fa-music"></i> Music</a></li>
-                <li><a href="{{@blog.url}}/tag/writing"><i class="fa fa-pencil"></i> Writing</a></li>
-                <li><a href="{{@blog.url}}/tag/photography"><i class="fa fa-camera-retro"></i> Photography</a></li>
+                <!--Optionals for my blog only -->
+                <li class="optional-tags"><a href="{{@blog.url}}/tag/entrepreneurship"><i class="fa fa-road"></i> Entrepreneurship</a></li>
+                <li class="optional-tags"><a href="{{@blog.url}}/tag/development"><i class="fa fa-code"></i> Development</a></li>
+                <li class="optional-tags"><a href="{{@blog.url}}/tag/music"><i class="fa fa-music"></i> Music</a></li>
+                <li class="optional-tags"><a href="{{@blog.url}}/tag/writing"><i class="fa fa-pencil"></i> Writing</a></li>
+                <li class="optional-tags"><a href="{{@blog.url}}/tag/photography"><i class="fa fa-camera-retro"></i> Photography</a></li>
+                <!-- Optionals End -->
             </ul>
     </nav>
 </div>
